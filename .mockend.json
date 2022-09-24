@@ -24,5 +24,32 @@
     "max": 100
    }
   }
+ },
+
+ "Attrezzo": {
+  "name": {
+   "string": {}
+  },
+  "magazzino": {
+   "belongsTo": "Magazzino"
+  }
+ },
+
+ "Magazzino": {
+  "name": {
+   "string": {}
+  },
+  "address": {
+   "string": {}
+  },
+  "city": {
+   "string": {}
+  },
+  "cap": {
+   "regexp": "[0-9]{5}"
+  },
+  "attrezzi": {
+   "hasMany": "Attrezzo"
+  }
  }
 }
